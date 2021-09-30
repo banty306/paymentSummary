@@ -1,4 +1,4 @@
-/*body{
+body{
     width: 450px;
     
 }
@@ -127,80 +127,4 @@ p{
 .parentDiv{
     width:100%;
 }
-*/
-.modal
-{
-	width: 50%;
-	margin:2% auto;
-	border:2px solid black;
-}
 
-.modal>.modal-header
-{
-	padding: 10px;
-	border-bottom:2px solid black;
-}
-.modal>.modal-header>.item
-{
-	display: flex;
-	align-items: center;
-}
-.modal>.modal-header>.item>.circle
-{
-	width: 50px;
-	line-height: 50px;
-	text-align: center;
-	background: silver;
-	border-radius: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.modal>.modal-body>.title
-{
-	border-bottom:5px dotted black;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	position: relative;
-}
-.modal>.modal-body>.title>span
-{
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform: translate(-50%,-50%);
-	background: white;
-	padding: 10px 30px;
-}
-.modal>.modal-body>.row
-{
-	display: flex;
-	padding: 20px;
-}
-
-.modal>.modal-body>.row.active
-{
-	flex-flow: row-reverse;
-}
-
-.modal>.modal-body>.row>.card
-{
-}
-.modal>.modal-body>.row>.card>.line1
-{
-	padding: 10px 20px;
-	border:2px solid black;
-	display: flex;
-	justify-content: space-between;
-}
-.modal>.modal-body>.row>.card>.line1>.l
-{
-}
-.modal>.modal-body>.row>.card>.line1>.r
-{
-	text-align: right;
-}
-.modal>.modal-body>.row>.card>.line2
-{
-	padding: 10px 0px;
-	text-align: right;
-}
