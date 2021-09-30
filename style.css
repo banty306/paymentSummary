@@ -1,6 +1,6 @@
 body{
     width: 450px;
-    float: center;
+    
 }
 header{
     display: flex;
@@ -58,7 +58,7 @@ p{
     border: 2px solid black;
     margin: 20px;
     margin-bottom: 0px;
-    width: 60%;
+    width: 260px;
 }
 .rightArrowDiv,.paymentMessage{
     width:100%;
@@ -127,4 +127,3 @@ p{
 .parentDiv{
     width:100%;
 }
-
