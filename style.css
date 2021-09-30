@@ -1,0 +1,129 @@
+body{
+    width: 450px;
+    float: center;
+}
+header{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+p{
+    margin: 0px;
+}
+#backArrow{
+    height: 15px;
+    width: 15px;
+    padding: 5px 10px;
+}
+#backBtn{
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+#backBtn:hover{
+    cursor: pointer;
+}
+#contactImageDiv{
+    padding: 5px 10px;
+}
+#contactImage{
+    border-radius: 50%;
+    background-color: thistle;
+    width:35px;
+    height:35px;
+}
+#contactImage p{
+    color: black;
+    font-size: 14px;
+}
+#mainDiv{
+    border: 2px solid black;
+    overflow: auto;
+}
+.dateDiv{
+    margin-top: 5px;
+    border-bottom: 2px dotted black;
+}
+#transactionDiv{
+    display: inline;
+}
+#transactionDiv p{
+    text-align: center;
+}
+.rightArrowImg{
+    height: 20px;
+    width: 20px;
+}
+.card{
+    display: flex;
+    border: 2px solid black;
+    margin: 20px;
+    margin-bottom: 0px;
+    width: 60%;
+}
+.rightArrowDiv,.paymentMessage{
+    width:100%;
+    height: 100%;
+}
+.paymentMessage{
+    margin: 10px auto auto 10px;
+    display: flex;
+    flex-direction: row;
+}
+.rightArrowImg{
+    margin-right: 5px;
+    float: right;
+}
+.paymentMessage img{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.flexDiv1,.flexDiv2{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.userDetails{
+    display: flex;
+    flex-direction:column;
+    padding: 5px 10px;
+}
+.amountDiv{
+    display: flex;
+    align-items: flex-end;
+    padding: 3px 10px;
+}
+.rupeeSymbol{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 8px;
+}
+.amount{
+    font-size: 35px;
+    text-emphasis: bold;
+}
+.actionBtns{
+    background-color: transparent;
+    padding: 3px 20px;
+    margin: 5px;
+    border-radius:5px;
+}
+.actionBtns p{
+    font-size: 10px;
+}
+.transactionDetails p{
+    font-size: 10px;
+}
+.transactionDate p{
+    font-size: 10px;
+}
+.parentDiv{
+    width:100%;
+}
