@@ -22,9 +22,20 @@ window.addEventListener('DOMContentLoaded',async ()=>{
         let startDate = new Date(transaction.startDate);    
         let newDate = `${startDate.getDate()} ${months[startDate.getMonth()]} ${startDate.getFullYear()}`;    
         let endDate = new Date(transaction.endDate);
-        // let newDate2 = `${endDate.getDate()} ${months[endDate.getMonth()]} ${endDate.getFullYear()} ${endDate.getHours()}:${endDate.getMinutes()} `;
+        let timePeriod;
+        if(endDate.getHours()<=12 && endDate.getHours()>0){
+            hours=endDate.getHours()
+            timePeriod = 'AM'
+        }else if(endDate.getHours()>12){
+            hours=endDate.getHours()-12;
+            timePeriod='PM'
+        }else if(endDate.getHours()==0){
+            hours=12
+            timePeriod = 'AM'
+        }
+        let newDate2 = `${endDate.getDate()} ${months[endDate.getMonth()]} ${endDate.getFullYear()} ${hours}:${endDate.getMinutes()} ${timePeriod}`;
         datesList.push(transaction.startDate)
-        // let finalEndDate = newDate2;
+        let finalEndDate = newDate2;
         console.log(transaction)
         let imageLink = (transaction.status==2)?'greenTick':'link';
         let action,message;
@@ -70,8 +81,8 @@ window.addEventListener('DOMContentLoaded',async ()=>{
         //     <span>${newDate}</span>
         // </div>
         `
-        <div>
-            <div class='card ${directionClass}'>
+        <div class=${directionClass} style='display:flex; flex-direction:column'>
+            <div class='card'>
                 <div class="flexDiv1">
                     <div class="amountDiv">
                         <img src="./assets/Indian-Rupee-symbol.svg" alt="" class="rupeeSymbol">
@@ -89,9 +100,9 @@ window.addEventListener('DOMContentLoaded',async ()=>{
                     </div>
                 </div>
             </div>
-            </div>
+            <p style='font-size:10px; margin-top:5px; margin-right:30px; text-align:right'>${newDate2}</p>
+        </div>
             `
-            // <p>${newDate2}</p>
         finalData.push(transTemplate)
     })
     let dateSet = new Set(datesList)
